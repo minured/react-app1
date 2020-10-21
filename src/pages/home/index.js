@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./home.scss";
 import Header from "../../components/header";
 import http from "../../http";
+import Hooks1 from "../../hooksDemo/Hooks1";
 
 class Home extends Component {
   constructor(props) {
@@ -17,6 +18,10 @@ class Home extends Component {
         <div>home</div>
         <button onClick={this.gotoLogin}>login</button>
         <button onClick={this.getData}>getData</button>
+
+        <hr />
+
+        <Hooks1 />
       </div>
     );
   }
